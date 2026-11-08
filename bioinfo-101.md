@@ -19,6 +19,14 @@ sacct -j <jobid>       # what happened after it ended (state, memory, time)
 
 Ask for the memory and time a job actually needs; `sacct` tells you what it used last time.
 
+**Learning the cluster.** Three good places to start:
+
+- [HURCS wiki](https://wiki.rcs.huji.ac.il/hurcs): Hebrew University Research Computing Services, covering accounts, the clusters, SLURM and storage
+- [HUJI CS wiki](https://wiki.cs.huji.ac.il/wiki/Main_page): the School of Computer Science & Engineering's system documentation
+- [The Missing Semester of Your CS Education](https://www.youtube.com/@MissingSemester) (MIT): friendly lectures on the shell, editors, git, ssh and the other tools nobody teaches you
+
+> **Tip:** put these pages (and any cluster handouts you're given) into a [NotebookLM](https://notebooklm.google.com) notebook. You get a study companion you can ask "how do I submit an array job?" that answers from your own sources.
+
 **Environments.** Install tools per project, never into the system. Use [pixi](https://pixi.sh) or conda/mamba with the `conda-forge` and `bioconda` channels, and commit the lock file so anyone can rebuild the same environment. Containers (Apptainer/Singularity on clusters) are the next step when a pipeline has to run unchanged elsewhere.
 
 **Version control.** Every analysis is a git repository: code, configs and small results tracked, raw data never. Commit small and often, with messages that say *why*.
@@ -77,6 +85,13 @@ Genomic and clinical data are personal data, even when "de-identified". Work onl
 
 ## 8. Where to go next
 
+**Working with genomic data, step by step:**
+
+- [DIY Transcriptomics](https://diytranscriptomics.com/): a complete, very clearly explained RNA-seq course, from raw reads to biological insight, in R
+- [Data Wrangling and Processing for Genomics](https://datacarpentry.github.io/wrangling-genomics/index.html) (Data Carpentry): a hands-on lesson in a real variant-calling workflow on the command line (QC, trimming, alignment, calling)
+
+**Further reading and practice:**
+
 - [Biostar Handbook](https://www.biostarhandbook.com): practical genomics, from the shell up
 - [Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/) (Holmes & Huber)
 - [Orchestrating Single-Cell Analysis with Bioconductor](https://bioconductor.org/books/release/OSCA/)
@@ -84,5 +99,7 @@ Genomic and clinical data are personal data, even when "de-identified". Work onl
 - Public data: [cBioPortal](https://www.cbioportal.org), [GDC / TCGA](https://portal.gdc.cancer.gov), [GEO](https://www.ncbi.nlm.nih.gov/geo/), [UCSC Genome Browser](https://genome.ucsc.edu)
 
 ---
+
+**Interested in genomic data?** Feel free to get in touch with [Rohi](https://github.com/Rohi-Taitou); always happy to talk it through.
 
 <sub>© 2026 Rohi Taitou Maimon (RTM).</sub>
