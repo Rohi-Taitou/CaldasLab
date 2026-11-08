@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/caldaslab-icon.svg" width="160" alt="CaldasLab icon: a tumour cell cluster among immune cells, fibroblasts and a vessel"></p>
+
 # CaldasLab
 
 Cancer ecosystems research: notes, guides and code.
